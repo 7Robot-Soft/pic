@@ -68,8 +68,8 @@ FIXDEPS=fixDeps
 .build-conf:  ${BUILD_SUBPROJECTS}
 	${MAKE}  -f nbproject/Makefile-C30_dsPIC33FJ256GP710A.mk dist/${CND_CONF}/${IMAGE_TYPE}/atp-template.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
-MP_PROCESSOR_OPTION=33FJ64MC802
-MP_LINKER_FILE_OPTION=,--script=p33FJ64MC802.gld
+MP_PROCESSOR_OPTION=33FJ64MC804
+MP_LINKER_FILE_OPTION=,--script=p33FJ64MC804.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)

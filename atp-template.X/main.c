@@ -41,7 +41,7 @@ _FICD(ICS_PGD1 & JTAGEN_OFF);
 
 volatile unsigned char callback = 0;
 volatile unsigned int delay = 1000;
-volatile char blink = 0;
+volatile char blink = 1;
 
 void OnSetCallback(unsigned char nbloop) {
     callback = nbloop;
@@ -76,7 +76,10 @@ int16_t main(void)
     
     AtpInit();
 
+    
+
     while(1) {
+        SendError();
         __delay_ms(delay);
         if (blink) {
             led = led ^ 1;

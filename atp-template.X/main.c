@@ -79,7 +79,6 @@ int16_t main(void)
     
 
     while(1) {
-        SendError();
         __delay_ms(delay);
         if (blink) {
             led = led ^ 1;
